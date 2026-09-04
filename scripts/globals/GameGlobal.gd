@@ -1,0 +1,2 @@
+# GameGlobal
+extends Node

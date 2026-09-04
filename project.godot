@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="VIN26-T3-J"
+run/main_scene="uid://ci4cqw1r424ev"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://assets/icons/icon.svg"
+
+[autoload]
+
+GameGlobal="*uid://dy201lhe8ndd5"
 
 [display]
 
@@ -27,6 +32,10 @@ folder_colors={
 "res://scripts/": "yellow",
 "res://themes/": "green"
 }
+
+[gui]
+
+theme/custom_font="res://assets/fonts/main/Bungee-Regular.ttf"
 
 [physics]
 
