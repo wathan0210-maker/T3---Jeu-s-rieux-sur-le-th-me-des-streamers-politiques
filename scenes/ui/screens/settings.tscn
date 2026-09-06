@@ -1,6 +1,388 @@
 [gd_scene format=3 uid="uid://dt51r6aleffvh"]
 
 [ext_resource type="Script" uid="uid://c12v7onloat3j" path="res://scenes/ui/screens/settings.gd" id="1_ghr4u"]
+[ext_resource type="Texture2D" uid="uid://c7b2w4u5xntpn" path="res://assets/textures/ui/grabber.png" id="2_sbqmj"]
+[ext_resource type="Texture2D" uid="uid://bp7lwmd2h616x" path="res://assets/textures/ui/settings9Rect.png" id="3_x6k18"]
+[ext_resource type="Texture2D" uid="uid://u88q4xjlsllh" path="res://assets/icons/son2.png" id="4_pbh10"]
+[ext_resource type="Texture2D" uid="uid://ddlso70hu3nl4" path="res://assets/icons/son.png" id="5_cyhtv"]
+[ext_resource type="Texture2D" uid="uid://bv6rnxqqbik8m" path="res://assets/icons/dialogue.png" id="6_og3eu"]
+[ext_resource type="Texture2D" uid="uid://cx3hnd1l1p31h" path="res://assets/icons/langue.png" id="7_cyhtv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cyhtv"]
+bg_color = Color(0.10980392, 0.22745098, 0.3764706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.7607843, 0.89411765, 0.9372549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdpoi"]
+bg_color = Color(0.10980392, 0.22745098, 0.3764706, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8dyk"]
+bg_color = Color(0.5882353, 0.81960785, 0.8980392, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.99215686, 0.99607843, 0.99607843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_c5u2p"]
+color = Color(0.288518, 0.28851798, 0.28851798, 1)
+thickness = 10
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_sbqmj"]
+color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+thickness = 10
+
+[sub_resource type="Theme" id="Theme_sdpoi"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = SubResource("StyleBoxFlat_cyhtv")
+Button/styles/normal = SubResource("StyleBoxFlat_sdpoi")
+Button/styles/pressed = SubResource("StyleBoxFlat_m8dyk")
+CheckButton/colors/font_color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+HSlider/icons/grabber = ExtResource("2_sbqmj")
+HSlider/icons/grabber_highlight = ExtResource("2_sbqmj")
+HSlider/styles/grabber_area = SubResource("StyleBoxLine_c5u2p")
+HSlider/styles/slider = SubResource("StyleBoxLine_sbqmj")
+Label/colors/font_color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_awmeu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qipdo"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_sdpoi"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_cyhtv"]
 
 [node name="Settings" type="CanvasLayer" unique_id=1935140882]
 script = ExtResource("1_ghr4u")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=409053352]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="TextureRect" type="NinePatchRect" parent="MarginContainer" unique_id=1512043638]
+layout_mode = 2
+theme = SubResource("Theme_sdpoi")
+texture = ExtResource("3_x6k18")
+patch_margin_top = 512
+patch_margin_bottom = 103
+
+[node name="TitreLabel" type="Label" parent="MarginContainer/TextureRect" unique_id=2117705704]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -113.5
+offset_top = 43.0
+offset_right = 113.5
+offset_bottom = 86.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 32
+text = "Paramètres"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/TextureRect" unique_id=1129654678]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 115
+theme_override_constants/margin_top = 139
+theme_override_constants/margin_right = 115
+theme_override_constants/margin_bottom = 28
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/TextureRect/MarginContainer" unique_id=1539113126]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer" unique_id=1786683471]
+custom_minimum_size = Vector2(0, 440.37)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 9
+
+[node name="SonLabel" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1182537270]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Son"
+horizontal_alignment = 1
+
+[node name="PrincipalHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1016841876]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=1326121821]
+layout_mode = 2
+texture = ExtResource("4_pbh10")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=417179534]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "Principal"
+horizontal_alignment = 1
+
+[node name="PrincipalHSlider" type="HSlider" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=2106158760]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+value = 50.0
+rounded = true
+scrollable = false
+
+[node name="MusiqueHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1740729770]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=422696810]
+layout_mode = 2
+texture = ExtResource("5_cyhtv")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=195822130]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "Musique"
+horizontal_alignment = 1
+
+[node name="MusiqueHSlider" type="HSlider" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=899851450]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+value = 50.0
+rounded = true
+scrollable = false
+
+[node name="EffetsHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1519522954]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=835536311]
+layout_mode = 2
+texture = ExtResource("4_pbh10")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=1088798177]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "Effets"
+horizontal_alignment = 1
+
+[node name="EffetsHSlider" type="HSlider" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=64392616]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+value = 50.0
+rounded = true
+scrollable = false
+
+[node name="VoixHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=777916484]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=1691137277]
+layout_mode = 2
+texture = ExtResource("6_og3eu")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=2120013415]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "Voix"
+horizontal_alignment = 1
+
+[node name="VoixHSlider" type="HSlider" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=1296182648]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+value = 50.0
+rounded = true
+scrollable = false
+
+[node name="AffichageLabel" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=25288737]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Affichage"
+horizontal_alignment = 1
+
+[node name="FullscreenCheckButton" type="CheckButton" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1252230935]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_awmeu")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qipdo")
+text = "Plein écran"
+alignment = 2
+
+[node name="ResolutionHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1417326956]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=695068080]
+layout_mode = 2
+texture = ExtResource("6_og3eu")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=459329712]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+text = "Résolution"
+horizontal_alignment = 1
+
+[node name="ResolutionOptionButton" type="OptionButton" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=1794699301]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+
+[node name="JeuLabel" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1316909278]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Jeu"
+horizontal_alignment = 1
+
+[node name="VitesseDialoguesHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1943434535]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=645957942]
+layout_mode = 2
+texture = ExtResource("6_og3eu")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=50382955]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Vitesse des dialogues"
+horizontal_alignment = 1
+
+[node name="VitesseDialoguesButtons" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=1276517664]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LenteButton" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=95176895]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+button_group = SubResource("ButtonGroup_sdpoi")
+text = "Lente"
+
+[node name="MoyenneButton" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=87708966]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_sdpoi")
+text = "Moyenne"
+
+[node name="RapideButton" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=1359707512]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+button_group = SubResource("ButtonGroup_sdpoi")
+text = "Rapide"
+
+[node name="LangueHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1854387298]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=464645326]
+layout_mode = 2
+texture = ExtResource("7_cyhtv")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=21218749]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Langue"
+horizontal_alignment = 1
+
+[node name="LangageButtons" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=264310680]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="fr" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer/LangageButtons" unique_id=528038487]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_cyhtv")
+text = "Français"
+
+[node name="en" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer/LangageButtons" unique_id=392833781]
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+button_group = SubResource("ButtonGroup_cyhtv")
+text = "English"
+
+[node name="ResetButton" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1076557191]
+layout_mode = 2
+text = "Paramètres par défaut"
+
+[node name="BackButton" type="Button" parent="MarginContainer/TextureRect" unique_id=1516668333]
+layout_mode = 1
+offset_right = 77.0
+offset_bottom = 30.0
+text = "Retour"
+
+[node name="StatusLabel" type="Label" parent="MarginContainer/TextureRect" unique_id=161292404]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = -22.0
+offset_right = 0.5
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="SaveCooldownTimer" type="Timer" parent="." unique_id=273327931]
+unique_name_in_owner = true
+wait_time = 2.0
+one_shot = true
+
+[connection signal="value_changed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer/PrincipalHSlider" to="." method="_on_slider_value_changed"]
+[connection signal="value_changed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer/MusiqueHSlider" to="." method="_on_slider_value_changed"]
+[connection signal="value_changed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer/EffetsHSlider" to="." method="_on_slider_value_changed"]
+[connection signal="value_changed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer/VoixHSlider" to="." method="_on_slider_value_changed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/FullscreenCheckButton" to="." method="_on_button_pressed"]
+[connection signal="item_selected" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer/ResolutionOptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MarginContainer/TextureRect/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="timeout" from="SaveCooldownTimer" to="." method="_on_save_cooldown_timer_timeout"]

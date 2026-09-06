@@ -21,7 +21,9 @@ GameGlobal="*uid://dy201lhe8ndd5"
 
 [display]
 
-window/stretch/mode="canvas_items"
+window/size/viewport_width=1366
+window/size/viewport_height=758
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
 [file_customization]
@@ -43,4 +45,5 @@ theme/custom_font="res://assets/fonts/main/Bungee-Regular.ttf"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=2
 rendering_device/driver.windows="d3d12"
