@@ -91,7 +91,9 @@ theme_override_constants/margin_bottom = 15
 layout_mode = 2
 theme = SubResource("Theme_sdpoi")
 texture = ExtResource("3_x6k18")
+patch_margin_left = 313
 patch_margin_top = 512
+patch_margin_right = 379
 patch_margin_bottom = 103
 
 [node name="TitreLabel" type="Label" parent="MarginContainer/TextureRect" unique_id=2117705704]
