@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cuq010m7scrv0"]
+
+[ext_resource type="Script" uid="uid://gx7bkdrs0cjq" path="res://scenes/ui/screens/computer_screen.gd" id="1_knk0i"]
+[ext_resource type="Texture2D" uid="uid://20kyotgj0sw4" path="res://assets/icons/icon.svg" id="2_18uyr"]
+
+[node name="ComputerScreen" type="CanvasLayer" unique_id=790516493]
+script = ExtResource("1_knk0i")
+
+[node name="WallpaperTextureRect" type="TextureRect" parent="." unique_id=657207800]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_18uyr")
+
+[node name="ComputerGridContainer" type="GridContainer" parent="." unique_id=1935557434]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
