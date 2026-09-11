@@ -40,32 +40,32 @@ Le but du protagoniste est de mettre en lumière ces erreurs et de rectifier les
 > Chaque coche est classée par ordre de priorité : plus un élément est bas dans la liste, plus il est facultatif et donc non essentiel pour le rendu final.
 
 ### Boîte de dialogue
-- ☐ Affichage dynamique du texte
-- ☐ Son pour l'affichage du texte
-- ☐ Couleur différente en fonction du personnage qui parle
-- ☐ Police différente en fonction du personnage qui parle
+- [ ] Affichage dynamique du texte
+- [ ] Son pour l'affichage du texte
+- [ ] Couleur différente en fonction du personnage qui parle
+- [ ] Police différente en fonction du personnage qui parle
 
 ### Sprites des personnages
-- ☐ Personnage principal
-- ☐ Jeune femme écolo (1er débat)
-- ☐ Homme noir mascu (2e débat)
-- ☐ Youtubeur extrême droite (3e débat)
-- ☐ Maire communiste (4e débat)
-- ☐ Candidat(e) aux élections de centre (5e débat)
+- [ ] Personnage principal
+- [ ] Jeune femme écolo (1er débat)
+- [ ] Homme noir mascu (2e débat)
+- [ ] Youtubeur extrême droite (3e débat)
+- [ ] Maire communiste (4e débat)
+- [ ] Candidat(e) aux élections de centre (5e débat)
 
 ### Animation des sprites
-- ☐ *(à détailler)*
+- [ ] *(à détailler)*
 
 ### Scénario + "énigmes"
-- ☐ *(à détailler)*
+- [ ] *(à détailler)*
 
 ### Phase 1 de gameplay (Enquête / prise d'information)
-- ☐ Simulation d'un bureau d'ordinateur
-- ☐ Simulation d'un moteur de recherche
-- ☐ Implémentation des articles
-- ☐ Système de redirection (vers un autre article ou une fake news)
-- ☐ Système de "dossier" contenant tous les indices récupérés via les articles
-- ☐ Système d'aide sous forme d'application sur le bureau
+- [ ] Simulation d'un bureau d'ordinateur
+- [ ] Simulation d'un moteur de recherche
+- [ ] Implémentation des articles
+- [ ] Système de redirection (vers un autre article ou une fake news)
+- [ ] Système de "dossier" contenant tous les indices récupérés via les articles
+- [ ] Système d'aide sous forme d'application sur le bureau
 
 ### Phase 2 de gameplay (Débat)
-- ☐ *(à détailler)*
+- [ ] *(à détailler)*
