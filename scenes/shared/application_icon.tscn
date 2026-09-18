@@ -18,10 +18,13 @@ script = ExtResource("1_xb88e")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=175674986]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 128.0
+offset_bottom = 128.0
 texture_normal = ExtResource("2_6rpo2")
+stretch_mode = 5
 
 [node name="Label" type="Label" parent="." unique_id=654005192]
 unique_name_in_owner = true
@@ -34,9 +37,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -62.0
-offset_top = -22.0
+offset_top = -10.0
 offset_right = 68.0
-offset_bottom = 25.0
+offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "PLACEHOLDER"

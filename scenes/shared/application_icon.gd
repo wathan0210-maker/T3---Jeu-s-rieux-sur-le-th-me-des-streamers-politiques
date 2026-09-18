@@ -14,4 +14,5 @@ func _ready() -> void:
 
 
 func _on_texture_button_pressed() -> void:
-	print("ayoub")
+	if application_name :
+		print("ayoub")
