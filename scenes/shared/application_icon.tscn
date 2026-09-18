@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://c7usn03h1y5vg"]
+
+[ext_resource type="Script" uid="uid://ckl5aijjh2y2q" path="res://scenes/shared/application_icon.gd" id="1_xb88e"]
+[ext_resource type="Texture2D" uid="uid://20kyotgj0sw4" path="res://assets/icons/icon.svg" id="2_6rpo2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xb88e"]
+font_size = 14
+
+[node name="ApplicationIcon" type="Control" unique_id=1628700130]
+custom_minimum_size = Vector2(130, 150)
+custom_maximum_size = Vector2(130, 150)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 100.0
+mouse_filter = 2
+script = ExtResource("1_xb88e")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=175674986]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("2_6rpo2")
+
+[node name="Label" type="Label" parent="." unique_id=654005192]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(130, 50)
+custom_maximum_size = Vector2(130, 50)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -62.0
+offset_top = -22.0
+offset_right = 68.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "PLACEHOLDER"
+label_settings = SubResource("LabelSettings_xb88e")
+horizontal_alignment = 1
+autowrap_mode = 1
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

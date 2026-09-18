@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://8msnmu5cr2ac"]
+
+[ext_resource type="Script" uid="uid://cmrjvaklcpef1" path="res://scenes/ui/screens/loading_screen_ui.gd" id="1_cwmy0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdpoi"]
+bg_color = Color(0.36908177, 0.56261885, 0.36436468, 1)
+
+[node name="LoadingScreenUI" type="CanvasLayer" unique_id=934364171]
+layer = 1000
+script = ExtResource("1_cwmy0")
+
+[node name="MainPanel" type="Panel" parent="." unique_id=574466074]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2000.0
+offset_right = 2000.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sdpoi")
+
+[node name="Panel" type="Panel" parent="MainPanel" unique_id=1565346058]
+custom_minimum_size = Vector2(0, 108)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -108.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MainPanel/Panel" unique_id=991370351]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="LoadingRichTextLabel" type="RichTextLabel" parent="MainPanel/Panel/MarginContainer" unique_id=1795396252]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 32
+text = "LOADING"
+scroll_active = false
+shortcut_keys_enabled = false
+vertical_alignment = 1
+visible_characters_behavior = 1
+
+[node name="LoadingDotsTimer" type="Timer" parent="MainPanel/Panel/MarginContainer/LoadingRichTextLabel" unique_id=175441630]
+wait_time = 0.5
+autostart = true
+
+[node name="LoadingTimer" type="Timer" parent="." unique_id=1489656261]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="MainPanel/Panel/MarginContainer/LoadingRichTextLabel/LoadingDotsTimer" to="." method="_on_loading_dots_timer_timeout"]
+[connection signal="timeout" from="LoadingTimer" to="." method="_on_loading_timer_timeout"]

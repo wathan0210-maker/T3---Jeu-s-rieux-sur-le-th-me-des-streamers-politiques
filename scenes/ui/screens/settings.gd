@@ -4,6 +4,7 @@ extends CanvasLayer
 # Autres
 @onready var save_cooldown_timer: Timer = %SaveCooldownTimer ## Cooldown pour sauvegarder
 @onready var status_label: Label = %StatusLabel ## Status de sauvegarde des paramètres
+@onready var main_margin_container: MarginContainer = %MainMarginContainer
 
 # Controls pour les paramètres
 @onready var principal_h_slider: HSlider = %PrincipalHSlider
@@ -41,6 +42,8 @@ const RESOLUTIONS: Array[String] = [
 
 # Script
 func _ready() -> void:
+	main_margin_container.scale = Vector2.ZERO
+	UiAnimationHandler.animate_pop(main_margin_container)
 	for res: String in RESOLUTIONS:
 		resolution_option_button.add_item(res)
 	
@@ -49,7 +52,7 @@ func _ready() -> void:
 
 ## Sauvegarde les paramètres dans le fichier de paramètres.
 func save_settings() -> void:
-	status_label.text = "Erreur lors de la sauvegarde des paramètres!"
+	status_label.text = "SETTINGS_SAVE_ERROR"
 
 ## Charge les paramètres du joueur dans l'interface
 func load_settings(settings_dict: Dictionary[String, Dictionary]) -> void:
@@ -122,6 +125,7 @@ func _on_save_cooldown_timer_timeout() -> void:
 
 func _on_back_button_pressed() -> void:
 	save_settings()
+	await UiAnimationHandler.animate_shrink(main_margin_container)
 	queue_free()
 
 func _on_reset_button_pressed() -> void:

@@ -5,3 +5,6 @@ extends Node
 
 const MAIN_MENU_SCREEN := preload("res://scenes/ui/screens/main_menu.tscn")
 const SETTINGS_SCREEN := preload("res://scenes/ui/screens/settings.tscn")
+const DIALOG_SCREEN := preload("res://scenes/ui/screens/dialog_ui.tscn")
+const COMPUTER_SCREEN := preload("res://scenes/ui/screens/computer_screen.tscn")
+const LOADING_SCREEN := preload("res://scenes/ui/screens/loading_screen_ui.tscn")

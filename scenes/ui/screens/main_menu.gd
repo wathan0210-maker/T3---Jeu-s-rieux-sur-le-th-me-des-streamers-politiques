@@ -3,11 +3,11 @@ extends CanvasLayer
 
 
 func _on_start_button_pressed() -> void:
-	pass # Replace with function body.
+	GameGlobal.load_scene(SceneUtils.COMPUTER_SCREEN)
 
 
 func _on_settings_button_pressed() -> void:
-	pass # Replace with function body.
+	add_child(SceneUtils.SETTINGS_SCREEN.instantiate())
 
 
 func _on_credits_button_pressed() -> void:
