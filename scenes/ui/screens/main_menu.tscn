@@ -19,19 +19,19 @@ size_flags_vertical = 4
 
 [node name="StartButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=853727367]
 layout_mode = 2
-text = "Commencer"
+text = "MAIN_MENU_START"
 
 [node name="SettingsButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1590417512]
 layout_mode = 2
-text = "Paramètres"
+text = "MAIN_MENU_SETTINGS"
 
 [node name="CreditsButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1586854504]
 layout_mode = 2
-text = "Crédits"
+text = "MAIN_MENU_CREDITS"
 
 [node name="QuitButton" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1818636843]
 layout_mode = 2
-text = "Quitter"
+text = "MAIN_MENU_QUIT"
 
 [node name="EmptyControl" type="Control" parent="HBoxContainer" unique_id=642024065]
 layout_mode = 2

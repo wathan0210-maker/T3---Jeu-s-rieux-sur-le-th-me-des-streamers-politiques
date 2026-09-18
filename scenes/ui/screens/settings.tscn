@@ -76,7 +76,8 @@ Label/colors/font_color = Color(0.09411765, 0.09411765, 0.09411765, 1)
 [node name="Settings" type="CanvasLayer" unique_id=1935140882]
 script = ExtResource("1_ghr4u")
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=409053352]
+[node name="MainMarginContainer" type="MarginContainer" parent="." unique_id=409053352]
+unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -87,7 +88,7 @@ theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 
-[node name="TextureRect" type="NinePatchRect" parent="MarginContainer" unique_id=1512043638]
+[node name="TextureRect" type="NinePatchRect" parent="MainMarginContainer" unique_id=1512043638]
 layout_mode = 2
 theme = SubResource("Theme_sdpoi")
 texture = ExtResource("3_x6k18")
@@ -96,7 +97,7 @@ patch_margin_top = 512
 patch_margin_right = 379
 patch_margin_bottom = 103
 
-[node name="TitreLabel" type="Label" parent="MarginContainer/TextureRect" unique_id=2117705704]
+[node name="TitreLabel" type="Label" parent="MainMarginContainer/TextureRect" unique_id=2117705704]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -107,11 +108,11 @@ offset_right = 113.5
 offset_bottom = 86.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 32
-text = "Paramètres"
+text = "SETTINGS_TITLE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/TextureRect" unique_id=1129654678]
+[node name="MarginContainer" type="MarginContainer" parent="MainMarginContainer/TextureRect" unique_id=1129654678]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -123,38 +124,38 @@ theme_override_constants/margin_top = 139
 theme_override_constants/margin_right = 115
 theme_override_constants/margin_bottom = 28
 
-[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/TextureRect/MarginContainer" unique_id=1539113126]
+[node name="ScrollContainer" type="ScrollContainer" parent="MainMarginContainer/TextureRect/MarginContainer" unique_id=1539113126]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer" unique_id=1786683471]
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer" unique_id=1786683471]
 custom_minimum_size = Vector2(0, 440.37)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 9
 
-[node name="SonLabel" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1182537270]
+[node name="SonLabel" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1182537270]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "Son"
+text = "SETTINGS_SOUND"
 horizontal_alignment = 1
 
-[node name="PrincipalHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1016841876]
+[node name="PrincipalHBoxContainer" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1016841876]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=1326121821]
+[node name="TextureRect" type="TextureRect" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=1326121821]
 layout_mode = 2
 texture = ExtResource("4_pbh10")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=417179534]
+[node name="Label" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=417179534]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.4
-text = "Principal"
+text = "SETTINGS_SOUND_MASTER"
 horizontal_alignment = 1
 
-[node name="PrincipalHSlider" type="HSlider" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=2106158760]
+[node name="PrincipalHSlider" type="HSlider" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer" unique_id=2106158760]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -162,22 +163,22 @@ value = 50.0
 rounded = true
 scrollable = false
 
-[node name="MusiqueHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1740729770]
+[node name="MusiqueHBoxContainer" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1740729770]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=422696810]
+[node name="TextureRect" type="TextureRect" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=422696810]
 layout_mode = 2
 texture = ExtResource("5_cyhtv")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=195822130]
+[node name="Label" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=195822130]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.4
-text = "Musique"
+text = "SETTINGS_SOUND_MUSIC"
 horizontal_alignment = 1
 
-[node name="MusiqueHSlider" type="HSlider" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=899851450]
+[node name="MusiqueHSlider" type="HSlider" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer" unique_id=899851450]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -185,22 +186,22 @@ value = 50.0
 rounded = true
 scrollable = false
 
-[node name="EffetsHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1519522954]
+[node name="EffetsHBoxContainer" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1519522954]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=835536311]
+[node name="TextureRect" type="TextureRect" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=835536311]
 layout_mode = 2
 texture = ExtResource("4_pbh10")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=1088798177]
+[node name="Label" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=1088798177]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.4
-text = "Effets"
+text = "SETTINGS_SOUND_EFFECTS"
 horizontal_alignment = 1
 
-[node name="EffetsHSlider" type="HSlider" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=64392616]
+[node name="EffetsHSlider" type="HSlider" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer" unique_id=64392616]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -208,22 +209,22 @@ value = 50.0
 rounded = true
 scrollable = false
 
-[node name="VoixHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=777916484]
+[node name="VoixHBoxContainer" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=777916484]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=1691137277]
+[node name="TextureRect" type="TextureRect" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=1691137277]
 layout_mode = 2
 texture = ExtResource("6_og3eu")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=2120013415]
+[node name="Label" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=2120013415]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.4
-text = "Voix"
+text = "SETTINGS_SOUND_EFFECTS"
 horizontal_alignment = 1
 
-[node name="VoixHSlider" type="HSlider" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=1296182648]
+[node name="VoixHSlider" type="HSlider" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer" unique_id=1296182648]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -231,134 +232,134 @@ value = 50.0
 rounded = true
 scrollable = false
 
-[node name="AffichageLabel" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=25288737]
+[node name="AffichageLabel" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=25288737]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "Affichage"
+text = "SETTINGS_DISPLAY"
 horizontal_alignment = 1
 
-[node name="FullscreenCheckButton" type="CheckButton" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1252230935]
+[node name="FullscreenCheckButton" type="CheckButton" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1252230935]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_styles/normal = SubResource("StyleBoxEmpty_awmeu")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_qipdo")
-text = "Plein écran"
+text = "SETTINGS_DISPLAY_FULLSCREEN"
 alignment = 2
 
-[node name="ResolutionHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1417326956]
+[node name="ResolutionHBoxContainer" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1417326956]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=695068080]
+[node name="TextureRect" type="TextureRect" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=695068080]
 layout_mode = 2
 texture = ExtResource("6_og3eu")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=459329712]
+[node name="Label" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=459329712]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.4
-text = "Résolution"
+text = "SETTINGS_DISPLAY_RESOLUTION"
 horizontal_alignment = 1
 
-[node name="ResolutionOptionButton" type="OptionButton" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=1794699301]
+[node name="ResolutionOptionButton" type="OptionButton" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer" unique_id=1794699301]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_font_sizes/font_size = 18
 
-[node name="JeuLabel" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1316909278]
+[node name="JeuLabel" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1316909278]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
-text = "Jeu"
+text = "SETTINGS_GAME"
 horizontal_alignment = 1
 
-[node name="VitesseDialoguesHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1943434535]
+[node name="VitesseDialoguesHBoxContainer" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1943434535]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=645957942]
+[node name="TextureRect" type="TextureRect" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=645957942]
 layout_mode = 2
 texture = ExtResource("6_og3eu")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=50382955]
+[node name="Label" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=50382955]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Vitesse des dialogues"
+text = "SETTINGS_GAME_DIALOG_SPEED"
 horizontal_alignment = 1
 
-[node name="VitesseDialoguesButtons" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=1276517664]
+[node name="VitesseDialoguesButtons" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer" unique_id=1276517664]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="LenteButton" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=95176895]
+[node name="LenteButton" type="Button" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=95176895]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = SubResource("ButtonGroup_sdpoi")
-text = "Lente"
+text = "SETTINGS_GAME_DIALOG_SPEED_SLOW"
 
-[node name="MoyenneButton" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=87708966]
+[node name="MoyenneButton" type="Button" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=87708966]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_pressed = true
 button_group = SubResource("ButtonGroup_sdpoi")
-text = "Moyenne"
+text = "SETTINGS_GAME_DIALOG_SPEED_MEDIUM"
 
-[node name="RapideButton" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=1359707512]
+[node name="RapideButton" type="Button" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VitesseDialoguesHBoxContainer/VitesseDialoguesButtons" unique_id=1359707512]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = SubResource("ButtonGroup_sdpoi")
-text = "Rapide"
+text = "SETTINGS_GAME_DIALOG_SPEED_FAST"
 
-[node name="LangueHBoxContainer" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1854387298]
+[node name="LangueHBoxContainer" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1854387298]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=464645326]
+[node name="TextureRect" type="TextureRect" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=464645326]
 layout_mode = 2
 texture = ExtResource("7_cyhtv")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=21218749]
+[node name="Label" type="Label" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=21218749]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Langue"
+text = "SETTINGS_GAME_LANGUAGE"
 horizontal_alignment = 1
 
-[node name="LangageButtons" type="HBoxContainer" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=264310680]
+[node name="LangageButtons" type="HBoxContainer" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer" unique_id=264310680]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="fr" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer/LangageButtons" unique_id=528038487]
+[node name="fr" type="Button" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer/LangageButtons" unique_id=528038487]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_pressed = true
 button_group = SubResource("ButtonGroup_cyhtv")
-text = "Français"
+text = "SETTINGS_GAME_LANGUAGE_FRENCH"
 
-[node name="en" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer/LangageButtons" unique_id=392833781]
+[node name="en" type="Button" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/LangueHBoxContainer/LangageButtons" unique_id=392833781]
 layout_mode = 2
 size_flags_horizontal = 3
 toggle_mode = true
 button_group = SubResource("ButtonGroup_cyhtv")
-text = "English"
+text = "SETTINGS_GAME_LANGUAGE_ENGLISH"
 
-[node name="ResetButton" type="Button" parent="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1076557191]
+[node name="ResetButton" type="Button" parent="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer" unique_id=1076557191]
 layout_mode = 2
-text = "Paramètres par défaut"
+text = "SETTINGS_RESET"
 
-[node name="BackButton" type="Button" parent="MarginContainer/TextureRect" unique_id=1516668333]
+[node name="BackButton" type="Button" parent="MainMarginContainer/TextureRect" unique_id=1516668333]
 layout_mode = 1
 offset_right = 77.0
 offset_bottom = 30.0
-text = "Retour"
+text = "SETTINGS_BACK"
 
-[node name="StatusLabel" type="Label" parent="MarginContainer/TextureRect" unique_id=161292404]
+[node name="StatusLabel" type="Label" parent="MainMarginContainer/TextureRect" unique_id=161292404]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 7
@@ -379,12 +380,12 @@ unique_name_in_owner = true
 wait_time = 2.0
 one_shot = true
 
-[connection signal="value_changed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer/PrincipalHSlider" to="." method="_on_slider_value_changed"]
-[connection signal="value_changed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer/MusiqueHSlider" to="." method="_on_slider_value_changed"]
-[connection signal="value_changed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer/EffetsHSlider" to="." method="_on_slider_value_changed"]
-[connection signal="value_changed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer/VoixHSlider" to="." method="_on_slider_value_changed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/FullscreenCheckButton" to="." method="_on_button_pressed"]
-[connection signal="item_selected" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer/ResolutionOptionButton" to="." method="_on_option_button_item_selected"]
-[connection signal="pressed" from="MarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
-[connection signal="pressed" from="MarginContainer/TextureRect/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="value_changed" from="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/PrincipalHBoxContainer/PrincipalHSlider" to="." method="_on_slider_value_changed"]
+[connection signal="value_changed" from="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/MusiqueHBoxContainer/MusiqueHSlider" to="." method="_on_slider_value_changed"]
+[connection signal="value_changed" from="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/EffetsHBoxContainer/EffetsHSlider" to="." method="_on_slider_value_changed"]
+[connection signal="value_changed" from="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/VoixHBoxContainer/VoixHSlider" to="." method="_on_slider_value_changed"]
+[connection signal="pressed" from="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/FullscreenCheckButton" to="." method="_on_button_pressed"]
+[connection signal="item_selected" from="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResolutionHBoxContainer/ResolutionOptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="MainMarginContainer/TextureRect/MarginContainer/ScrollContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="MainMarginContainer/TextureRect/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="timeout" from="SaveCooldownTimer" to="." method="_on_save_cooldown_timer_timeout"]

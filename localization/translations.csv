@@ -1,0 +1,27 @@
+keys,fr,en
+MAIN_MENU_START,Commencer,Start
+MAIN_MENU_SETTINGS,Paramètres,Settings
+MAIN_MENU_CREDITS,Crédits,Credits
+MAIN_MENU_QUIT,Quitter,Quit
+SETTINGS_TITLE,Paramètres,Settings
+SETTINGS_SOUND,Son,Sound
+SETTINGS_SOUND_MASTER,Principal,Master
+SETTINGS_SOUND_MUSIC,Musique,Music
+SETTINGS_SOUND_EFFECTS,Effets,Effects
+SETTINGS_SOUND_EFFECTS,Voix,Voices
+SETTINGS_DISPLAY,Affichage,Display
+SETTINGS_DISPLAY_FULLSCREEN,Plein écran,Fullscreen
+SETTINGS_DISPLAY_RESOLUTION,Résolution,Resolution
+SETTINGS_GAME,Jeu,Game
+SETTINGS_GAME_DIALOG_SPEED,Vitesse des dialogues,Dialog speed
+SETTINGS_GAME_DIALOG_SPEED_SLOW,Lente,Slow
+SETTINGS_GAME_DIALOG_SPEED_MEDIUM,Moyenne,Medium
+SETTINGS_GAME_DIALOG_SPEED_FAST,Rapide,Fast
+SETTINGS_GAME_LANGUAGE,Langue,Language
+SETTINGS_GAME_LANGUAGE_FRENCH,Français,French
+SETTINGS_GAME_LANGUAGE_ENGLISH,English,English
+SETTINGS_RESET,Paramètres par défaut,Reset settings
+SETTINGS_BACK,Retour,Back
+SETTINGS_SAVE_ERROR,Erreur lors de la sauvegarde des paramètres!,Error while saving the settings!
+DIALOG_HINT_BAR,[G] Options [R] Historique [O] Autoplay,[G] Settings [R] History [O] Autoplay
+LOADING,Chargement,Loading
