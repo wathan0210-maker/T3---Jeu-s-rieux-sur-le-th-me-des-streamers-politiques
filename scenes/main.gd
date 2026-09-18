@@ -1,14 +1,16 @@
 class_name Main
 extends Node
 
+var current_scene: Node:
+	set(value):
+		if current_scene:
+			current_scene.queue_free()
+		current_scene = value
+		add_child(current_scene)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	GameGlobal.main = self
+	
 	# Commencer sur le menu principal
-	var main_menu_window := SceneUtils.MAIN_MENU_SCREEN.instantiate()
-	add_child(main_menu_window)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	current_scene = SceneUtils.MAIN_MENU_SCREEN.instantiate()
