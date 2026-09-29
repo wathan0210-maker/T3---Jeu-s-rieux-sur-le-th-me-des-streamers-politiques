@@ -1,0 +1,18 @@
+~ start
+kadir: Bonjour, ayourt, j'aime ayourt.
+ayoub: eurw eurw eurw j'aime les eurw.
+yanis: soniiiiccccccc!!!!!
+ayoub: Tu es sûr de toi ?
+ayoub: Il te reste peu de temps pour réagir !
+- Contre attaque 1 [#color=contre_attaque]
+	kadir: J'attaque !
+	=> END
+- Contre attaque 2 [#color=contre_attaque]
+	kadir: J'attaque !
+	=> END
+- Montrer une preuve [#color=montrer_preuve]
+	kadir: Je pare le coup.
+	=> END
+- Ne rien faire... [#color=rien_faire]
+	kadir: Je prends la fuite !
+	=> END
