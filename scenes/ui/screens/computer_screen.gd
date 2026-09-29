@@ -25,6 +25,10 @@ func _ready() -> void:
 	var settings_app: ApplicationIconUI = APPLICATION_ICON_SCREEN.instantiate()
 	computer_grid_container.add_child(settings_app)
 	settings_app.setup("Paramètres", preload("res://assets/icons/Apps/settings.png"))
+	
+	var wallpapers_app: ApplicationIconUI = APPLICATION_ICON_SCREEN.instantiate()
+	computer_grid_container.add_child(wallpapers_app)
+	wallpapers_app.setup("Fond d'écrans", preload("res://assets/icons/Apps/wallpapers_icon.png"))
 
 	var obs_application_icon: ApplicationIconUI = %OBSApplicationIcon
 	obs_application_icon.setup("Lancer le live", preload("res://assets/icons/Apps/OBS_Studio_logo.png"))
