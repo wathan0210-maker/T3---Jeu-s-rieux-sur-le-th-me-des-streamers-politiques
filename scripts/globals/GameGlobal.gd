@@ -13,3 +13,4 @@ func load_scene(new_scene: PackedScene) -> void:
 		main.add_child(loading_screen_instance)
 		await loading_screen_instance.loading_start
 		main.current_scene = new_scene.instantiate()
+		is_scene_loader_busy = false
