@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://rjbgph21av3u"]
+
+[ext_resource type="Script" uid="uid://dqt2nmv0ll0kc" path="res://scenes/ui/screens/investigation_ui.gd" id="1_s44ce"]
+[ext_resource type="FontFile" uid="uid://d1au1rdbdrl5o" path="res://assets/fonts/articles_5/CormorantGaramond-VariableFont_wght.ttf" id="2_he6iw"]
+[ext_resource type="FontFile" uid="uid://ci5xe0ac5gp6q" path="res://assets/fonts/articles_2/NotoSerif-VariableFont_wdth,wght.ttf" id="3_oturi"]
+[ext_resource type="Texture2D" uid="uid://ctb2qsh27c0ho" path="res://assets/icons/Loupe.png" id="4_42qvo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sdpoi"]
+bg_color = Color(0.89492244, 0.89492244, 0.8949224, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_sdpoi"]
+font = ExtResource("2_he6iw")
+font_size = 90
+font_color = Color(0.26293245, 0.26293245, 0.26293245, 1)
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8dyk"]
+bg_color = Color(0.58103293, 0.581033, 0.58103275, 1)
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+
+[sub_resource type="Theme" id="Theme_s44ce"]
+default_font = ExtResource("2_he6iw")
+default_font_size = 24
+LinkButton/colors/font_color = Color(0.00036868156, 0.22950602, 0.7526127, 1)
+
+[node name="InvestigationUI" type="CanvasLayer" unique_id=1669939648]
+script = ExtResource("1_s44ce")
+
+[node name="BGPanel" type="Panel" parent="." unique_id=780006424]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sdpoi")
+
+[node name="GoogoleContainer" type="MarginContainer" parent="BGPanel" unique_id=1482406958]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33455345
+anchor_top = 0.28627968
+anchor_right = 0.6654466
+anchor_bottom = 0.53825855
+offset_bottom = 3.0517578e-05
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 24
+metadata/_edit_use_anchors_ = true
+
+[node name="MainContainer" type="VBoxContainer" parent="BGPanel/GoogoleContainer" unique_id=841783414]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TitleLabel" type="Label" parent="BGPanel/GoogoleContainer/MainContainer" unique_id=335992705]
+layout_mode = 2
+text = "GOOGOLE"
+label_settings = SubResource("LabelSettings_sdpoi")
+
+[node name="SearchbarLineEdit" type="LineEdit" parent="BGPanel/GoogoleContainer/MainContainer" unique_id=1014896577]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oturi")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8dyk")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_m8dyk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_m8dyk")
+placeholder_text = "INVESTIGATION_SEARCH"
+editable = false
+right_icon = ExtResource("4_42qvo")
+icon_expand_mode = 2
+right_icon_scale = 0.65
+
+[node name="RecommendationsVBoxContainer" type="VBoxContainer" parent="BGPanel/GoogoleContainer/MainContainer" unique_id=459873296]
+unique_name_in_owner = true
+layout_mode = 2
+theme = SubResource("Theme_s44ce")
+theme_override_constants/separation = 6
+
+[node name="ReasearchContainer" type="VBoxContainer" parent="BGPanel" unique_id=1273899096]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GoogoleContainer" type="MarginContainer" parent="BGPanel/ReasearchContainer" unique_id=1478661428]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 24
+metadata/_edit_use_anchors_ = true
+
+[node name="MainContainer" type="VBoxContainer" parent="BGPanel/ReasearchContainer/GoogoleContainer" unique_id=682238282]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="TitleLabel" type="Label" parent="BGPanel/ReasearchContainer/GoogoleContainer/MainContainer" unique_id=507257559]
+layout_mode = 2
+text = "GOOGOLE"
+label_settings = SubResource("LabelSettings_sdpoi")
+
+[node name="SearchbarLineEdit" type="LineEdit" parent="BGPanel/ReasearchContainer/GoogoleContainer/MainContainer" unique_id=1738597991]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oturi")
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8dyk")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_m8dyk")
+theme_override_styles/focus = SubResource("StyleBoxFlat_m8dyk")
+placeholder_text = "INVESTIGATION_SEARCH"
+editable = false
+right_icon = ExtResource("4_42qvo")
+icon_expand_mode = 2
+right_icon_scale = 0.65
+
+[node name="MarginContainer" type="MarginContainer" parent="BGPanel/ReasearchContainer" unique_id=1224382496]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 28
+
+[node name="SearchScrollContainer" type="ScrollContainer" parent="BGPanel/ReasearchContainer/MarginContainer" unique_id=1681618548]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ArticlesVBoxContainer" type="VBoxContainer" parent="BGPanel/ReasearchContainer/MarginContainer/SearchScrollContainer" unique_id=1856352303]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ArticleContainer" type="MarginContainer" parent="BGPanel" unique_id=2038835399]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10

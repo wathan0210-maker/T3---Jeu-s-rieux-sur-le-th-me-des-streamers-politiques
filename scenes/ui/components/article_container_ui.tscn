@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dcfc3xa8cwbil"]
+
+[ext_resource type="FontFile" uid="uid://d1au1rdbdrl5o" path="res://assets/fonts/articles_5/CormorantGaramond-VariableFont_wght.ttf" id="1_2crn3"]
+[ext_resource type="Script" uid="uid://el478bu4mp20" path="res://scenes/ui/components/article_container_ui.gd" id="2_0away"]
+
+[sub_resource type="Theme" id="Theme_oturi"]
+default_font = ExtResource("1_2crn3")
+Label/fonts/font = ExtResource("1_2crn3")
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sdpoi"]
+size = Vector2(128, 64)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2crn3"]
+font_size = 18
+font_color = Color(0.98927706, 0.2570576, 0.9999998, 1)
+
+[node name="ArticleContainerUI" type="VBoxContainer" unique_id=1289461326]
+propagate_maximum_size = false
+theme = SubResource("Theme_oturi")
+script = ExtResource("2_0away")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1638361750]
+layout_mode = 2
+theme_override_constants/separation = 55
+
+[node name="LogoTextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1288242945]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 64)
+custom_maximum_size = Vector2(128, 64)
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_sdpoi")
+
+[node name="MediaNameLabel" type="Label" parent="HBoxContainer" unique_id=386203237]
+unique_name_in_owner = true
+layout_mode = 2
+text = "MEDIA_NAME"
+label_settings = SubResource("LabelSettings_2crn3")
+
+[node name="TitleLinkButton" type="LinkButton" parent="." unique_id=743408394]
+unique_name_in_owner = true
+layout_mode = 2
+text = "ARTICLE_TITLE"
+
+[node name="SubtitleLabel" type="RichTextLabel" parent="." unique_id=99451650]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(284, 100)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.7121294, 0.7121294, 0.71212935, 1)
+theme_override_font_sizes/normal_font_size = 18
+text = "article_subtitle"

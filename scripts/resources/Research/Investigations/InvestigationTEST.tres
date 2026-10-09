@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="Investigation" format=3 uid="uid://bxomfamcta3xh"]
+
+[ext_resource type="Script" uid="uid://ckbq5gp6vdpgh" path="res://scripts/classes/Research/Recommendation.gd" id="1_352y2"]
+[ext_resource type="Script" uid="uid://c1vflregsp4th" path="res://scripts/classes/Research/Article.gd" id="1_t2fsg"]
+[ext_resource type="Script" uid="uid://wvhfla8tw5iu" path="res://scripts/classes/Research/Investigation.gd" id="2_352y2"]
+[ext_resource type="Resource" uid="uid://ddrfosxxcf6kk" path="res://scripts/resources/Research/Medias/CNULS.tres" id="3_i1scn"]
+
+[sub_resource type="Resource" id="Resource_i1scn"]
+script = ExtResource("1_t2fsg")
+title = "article 1 "
+subtitle = "article subtitle"
+content = "ayoub article test ayoub [url=clue_test_1]sonic[/url]
+
+ayoub eurw eurw [url=clue_test_2]morsure[/url]"
+good_clues = Array[String](["clue_test_1"])
+media = ExtResource("3_i1scn")
+is_good_article = true
+metadata/_custom_type_script = "uid://c1vflregsp4th"
+
+[sub_resource type="Resource" id="Resource_s44ce"]
+script = ExtResource("1_352y2")
+title = "rec. 1"
+articles = Array[ExtResource("1_t2fsg")]([SubResource("Resource_i1scn"), SubResource("Resource_i1scn")])
+metadata/_custom_type_script = "uid://ckbq5gp6vdpgh"
+
+[sub_resource type="Resource" id="Resource_l0j7f"]
+script = ExtResource("1_t2fsg")
+title = "article test 3"
+subtitle = "wayoub"
+content = "wayoub"
+media = ExtResource("3_i1scn")
+metadata/_custom_type_script = "uid://c1vflregsp4th"
+
+[sub_resource type="Resource" id="Resource_0d7ip"]
+script = ExtResource("1_352y2")
+title = "rec. 2"
+articles = Array[ExtResource("1_t2fsg")]([SubResource("Resource_l0j7f")])
+metadata/_custom_type_script = "uid://ckbq5gp6vdpgh"
+
+[resource]
+script = ExtResource("2_352y2")
+title = "TEST INVESTIGATION"
+description = "This is a test investigation"
+recommendations = Array[ExtResource("1_352y2")]([SubResource("Resource_s44ce"), SubResource("Resource_0d7ip")])
+metadata/_custom_type_script = "uid://wvhfla8tw5iu"
