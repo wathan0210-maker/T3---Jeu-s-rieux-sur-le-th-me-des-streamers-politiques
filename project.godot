@@ -20,6 +20,7 @@ config/icon="res://assets/icons/icon.svg"
 GameGlobal="*uid://dy201lhe8ndd5"
 UiAnimationHandler="*uid://ddqrdjtnx86gw"
 DialogueManager="*uid://c3rodes2l3gxb"
+Debat="*uid://bhxmijhrhysg2"
 
 [display]
 
@@ -64,7 +65,7 @@ game_skip_text={
 [internationalization]
 
 locale/translations=PackedStringArray("res://localization/translations.fr.translation", "res://localization/translations.en.translation")
-locale/translations_pot_files=PackedStringArray("res://dialogue/example.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogues/example.dialogue", "res://dialogues/debat_lea_fontaine.dialogue")
 
 [physics]
 

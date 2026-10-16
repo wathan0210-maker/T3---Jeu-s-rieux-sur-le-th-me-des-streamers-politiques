@@ -1,0 +1,641 @@
+# =====================================================================
+# Mordus Inc. — Débat 1 : Léa Fontaine (écologie)
+# Sujet global : « La transition écologique, promesses tenables ? »
+#
+# Phase 1 : Les emplois verts        (5 énigmes)
+# Phase 2 : Les éoliennes            (4 énigmes)
+# Phase 3 : La participation de tous (4 énigmes)
+# Phase 4 : Les transports           (4 énigmes)
+#
+# Chaque énigme = un titre ~ pX_eY (Léa parle) + un titre ~ pX_eY_choix
+# (les 4 choix). Une seule bonne réponse par énigme.
+# Bonne réponse : on passe à la suite.
+# Mauvaise réponse : Léa reprend son idée, on revient au choix.
+# Au-dessus de chaque choix, un commentaire donne le type d'action
+# (contre-attaque, preuve, ne rien faire) et marque la BONNE RÉPONSE.
+# « Joueur » = le personnage principal (renommer si besoin).
+# =====================================================================
+
+~ start
+Joueur: Salut le chat ! Bienvenue sur le live, ce soir on a un duplex un peu spécial.
+Joueur: Mon invitée, c'est Léa Fontaine, streameuse écolo, qui s'est lancée il y a quelques mois.
+Léa: Coucou tout le monde ! Merci pour l'invitation, je suis trop contente d'être là !
+Léa: Attends, il est où le bouton pour activer ma caméra... ah, c'est bon, vous me voyez ? Parfait !
+Joueur: Le thème de ce soir : la transition écologique. Est-ce que les promesses sont tenables ?
+Joueur: On va découper ça en quatre parties. Et comme d'habitude ici, on vérifie tout ce qui se dit.
+Léa: Ça me va ! J'ai rien à cacher, moi. Je veux juste que tout le monde devienne écolo !
+=> phase1
+
+# =====================================================================
+# PHASE 1 — LES EMPLOIS VERTS
+# =====================================================================
+
+~ phase1
+Joueur: Première partie : l'écologie, est-ce que ça crée vraiment des emplois ?
+Léa: Évidemment ! C'est même mon sujet préféré.
+=> p1_e1
+
+# --- Énigme 1.1 : affirmation vague → bonne réponse : QUESTION (contre-attaque 1)
+~ p1_e1
+Léa: La rénovation thermique des logements, ça va créer des centaines de milliers d'emplois.
+Léa: C'est prouvé, tout le monde le sait !
+=> p1_e1_choix
+
+~ p1_e1_choix
+Joueur: Prouvé... vraiment ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque (BONNE RÉPONSE)
+- Prouvé par qui ? [#color=contre_attaque]
+    Joueur: « Prouvé », d'accord. Mais par qui ? Tu as une source ?
+    Léa: Euh... oui ! C'est l'ADEME. Ils parlent de... 200 000 emplois sur dix ans, je crois.
+    => p1_e2
+# Contre-attaque
+- Tu inventes ! [#color=contre_attaque]
+    Joueur: Arrête, tu sors ce chiffre de nulle part pour faire joli !
+    Léa: Hé ! Je n'invente rien, moi... C'est juste que je n'ai pas le chiffre exact sous la main.
+    Léa: Bref, la rénovation, ça crée énormément d'emplois, c'est sûr.
+    => p1_e1_choix
+# Présenter une preuve : Rapport ADEME
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Regarde ce rapport de l'ADEME !
+    Léa: Attends... je n'ai même pas encore donné de chiffre. Tu réponds à quoi, là ?
+    Léa: Donc je disais : des centaines de milliers d'emplois avec la rénovation !
+    => p1_e1_choix
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Tu vois, même lui est d'accord ! Des centaines de milliers d'emplois !
+    Joueur: (Je ne peux pas laisser passer un chiffre sans source...)
+    => p1_e1_choix
+
+# --- Énigme 1.2 : chiffre précis mais conditionné → bonne réponse : PREUVE
+~ p1_e2
+Léa: Donc voilà : 200 000 emplois, l'ADEME l'a dit. C'est acquis !
+=> p1_e2_choix
+
+~ p1_e2_choix
+Joueur: Acquis... Qu'est-ce que dit vraiment ce rapport ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- L'ADEME, c'est des militants [#color=contre_attaque]
+    Joueur: L'ADEME ? C'est pas un peu des militants, ces gens-là ?
+    Léa: Mais non ! C'est une agence publique, ça n'a rien à voir.
+    Léa: L'ADEME parle de 200 000 emplois, point.
+    => p1_e2_choix
+# Contre-attaque
+- 200 000 par an ? [#color=contre_attaque]
+    Joueur: 200 000 emplois... par an ?
+    Léa: Bah non, sur dix ans, je viens de le dire ! Tu m'écoutes ?
+    Léa: Bon. 200 000 emplois sur dix ans, c'est acquis.
+    => p1_e2_choix
+# Présenter une preuve : Rapport ADEME (BONNE RÉPONSE)
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: J'ai le rapport sous les yeux. Le chiffre existe, oui.
+    Joueur: Mais il dépend d'un scénario avec un budget public massif pour la rénovation. Et ce budget n'a jamais été voté.
+    Léa: Oh... Attends, je relis. Ah oui. « Sous réserve d'un investissement de »... Ah mince.
+    Léa: Ok, tu as raison. J'ai dit « acquis » mais c'est un « si ». Je me suis emballée, pardon !
+    => p1_e3
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Voilà, 200 000 emplois garantis ! Personne ne peut dire le contraire.
+    Joueur: (Ce n'est pas ce que dit le rapport. J'ai de quoi la corriger.)
+    => p1_e2_choix
+
+# --- Énigme 1.3 : affirmation vraie → bonne réponse : NE RIEN FAIRE
+~ p1_e3
+Léa: Bon, en tout cas, les énergies renouvelables, elles recrutent déjà aujourd'hui. Ça, c'est concret.
+=> p1_e3_choix
+
+~ p1_e3_choix
+Joueur: Les renouvelables recrutent...
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Des emplois précaires ! [#color=contre_attaque]
+    Joueur: Ouais, enfin, des petits boulots précaires, quoi.
+    Léa: Hein ? Technicien de maintenance éolienne, c'est pas un petit boulot !
+    Léa: Je répète : les renouvelables recrutent déjà. C'est un fait.
+    => p1_e3_choix
+# Contre-attaque
+- Combien exactement ? [#color=contre_attaque]
+    Joueur: Combien de postes exactement ? Au chiffre près ?
+    Léa: Au chiffre près ? Euh... Je sais pas, mais il y a plein d'offres, tu peux vérifier !
+    Léa: Bref, ça recrute, c'est tout ce que je dis.
+    => p1_e3_choix
+# Présenter une preuve : Rapport ADEME
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Le rapport de l'ADEME dit que...
+    Léa: Que quoi ? Il ne dit pas que ça ne recrute pas, si ?
+    Joueur: (Non... Ma preuve ne contredit rien du tout.)
+    Léa: Donc oui, les renouvelables recrutent déjà.
+    => p1_e3_choix
+# Ne rien faire (BONNE RÉPONSE)
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Joueur: (C'est vrai. Pas besoin de la contredire là-dessus.)
+    Léa: Merci ! Enfin quelqu'un qui ne conteste pas tout par principe.
+    => p1_e4
+
+# --- Énigme 1.4 : généralisation abusive → bonne réponse : QUESTION (contre-attaque 2)
+~ p1_e4
+Léa: De toute façon, contre une transition rapide, il n'y a aucun argument valable.
+Léa: Ceux qui disent le contraire, c'est juste les lobbys du pétrole !
+=> p1_e4_choix
+
+~ p1_e4_choix
+Joueur: Aucun argument valable... Tous des lobbys ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Donc je suis un lobby ? [#color=contre_attaque]
+    Joueur: Donc si je pose des questions, je suis un lobby, c'est ça ?
+    Léa: Mais non, je ne parlais pas de toi ! Pourquoi tu le prends pour toi ?
+    Léa: Je disais juste qu'il n'y a aucun argument valable contre.
+    => p1_e4_choix
+# Contre-attaque (BONNE RÉPONSE)
+- Et les salariés du pétrole ? [#color=contre_attaque]
+    Joueur: Et les gens qui travaillent dans les raffineries, ou dans l'industrie fossile ? Ils deviennent quoi, si on va trop vite ?
+    Léa: Ah... Euh. Bon, ça, c'est une vraie question, oui.
+    Léa: Ok, « aucun argument », c'était trop fort. Il faut prévoir leur reconversion, sinon ils sont perdants.
+    => p1_e5
+# Présenter une preuve : Rapport ADEME
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: L'ADEME montre que...
+    Léa: Que les lobbys n'existent pas ? Je ne crois pas, non.
+    Léa: Donc je maintiens : aucun argument valable contre une transition rapide.
+    => p1_e4_choix
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Tu vois ? Il n'a rien à répondre. C'est bien la preuve !
+    Joueur: (« Aucun », c'est beaucoup trop général. Je dois la faire préciser.)
+    => p1_e4_choix
+
+# --- Énigme 1.5 : erreur de chiffre sincère → bonne réponse : PREUVE
+~ p1_e5
+Léa: Justement ! Dans mon programme, je prévois 5 milliards d'euros pour la reconversion des travailleurs.
+=> p1_e5_choix
+
+~ p1_e5_choix
+Joueur: 5 milliards... C'est bien ce qui est écrit ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Tu les sors d'où ? [#color=contre_attaque]
+    Joueur: Et ces 5 milliards, tu les trouves où ?
+    Léa: Ça, c'est un autre débat ! Je dis juste ce qu'il y a dans mon programme.
+    Léa: 5 milliards, c'est écrit noir sur blanc.
+    => p1_e5_choix
+# Contre-attaque
+- C'est trop peu ! [#color=contre_attaque]
+    Joueur: 5 milliards, c'est rien du tout à l'échelle du pays !
+    Léa: Ah bon ? Bah... c'est déjà pas mal, non ?
+    Léa: Bref, 5 milliards pour la reconversion.
+    => p1_e5_choix
+# Présenter une preuve : Programme de Léa (BONNE RÉPONSE)
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: J'ai ton programme ici. Page reconversion : il est écrit 2 milliards, pas 5.
+    Léa: Quoi ? Fais voir... Oh non. C'est 2. J'ai confondu avec un autre chiffre.
+    Léa: Désolée tout le monde, c'est bien 2 milliards. Merci de m'avoir corrigée !
+    => fin_phase1
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Voilà, 5 milliards ! C'est ça, être ambitieux.
+    Joueur: (J'ai son programme dans mon dossier. Je devrais vérifier.)
+    => p1_e5_choix
+
+~ fin_phase1
+Joueur: Ok, on retient : l'écologie peut créer des emplois, mais les gros chiffres dépendent de budgets pas encore votés.
+Léa: Et il faut accompagner ceux qui changent de métier. Je suis d'accord !
+=> phase2
+
+# =====================================================================
+# PHASE 2 — LES ÉOLIENNES
+# =====================================================================
+
+~ phase2
+Joueur: Deuxième partie : les éoliennes. Sujet qui fâche !
+Léa: Les éoliennes, je les adore ! Ça tourne, c'est joli, et c'est propre.
+=> p2_e1
+
+# --- Énigme 2.1 : chiffre précis faux → bonne réponse : PREUVE
+~ p2_e1
+Léa: Et puis l'éolien, ça produit déjà un tiers de l'électricité en France !
+=> p2_e1_choix
+
+~ p2_e1_choix
+Joueur: Un tiers de notre électricité ? Juste avec l'éolien ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Personne n'en veut ! [#color=contre_attaque]
+    Joueur: Bah, vu que personne ne veut d'éoliennes près de chez soi...
+    Léa: C'est pas vrai, il y a plein de communes qui en veulent ! Et ça ne répond pas à ce que j'ai dit.
+    Léa: L'éolien, c'est un tiers de notre électricité.
+    => p2_e1_choix
+# Contre-attaque
+- Ça dépend du vent ! [#color=contre_attaque]
+    Joueur: Oui mais quand il n'y a pas de vent, ça ne produit rien !
+    Léa: Bah oui, c'est le principe d'une éolienne. Mais sur l'année, ça fait un tiers !
+    => p2_e1_choix
+# Présenter une preuve : Bilan électrique RTE (BONNE RÉPONSE)
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Le bilan de RTE, le gestionnaire du réseau électrique, dit autre chose.
+    Joueur: En 2023, l'éolien c'est environ 10 % de la production. Le tiers, ce serait plutôt toutes les renouvelables réunies, avec l'hydraulique et le solaire, et même là on est un peu en dessous.
+    Léa: Ah ! Oui, j'ai mélangé « éolien » et « renouvelables ». Oups.
+    Léa: Bon, 10 %, c'est déjà bien, et ça augmente ! Mais tu as raison, pas un tiers.
+    => p2_e2
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Un tiers ! Et dans dix ans, ce sera la moitié !
+    Joueur: (Le bilan RTE est dans mon dossier. Ce chiffre me semble faux.)
+    => p2_e1_choix
+
+# --- Énigme 2.2 : affirmation vraie → bonne réponse : NE RIEN FAIRE
+~ p2_e2
+Léa: Et tu sais qu'une éolienne rembourse l'énergie qu'il a fallu pour la fabriquer en à peu près un an ?
+=> p2_e2_choix
+
+~ p2_e2_choix
+Joueur: Un an pour rembourser sa fabrication...
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Et le béton ? [#color=contre_attaque]
+    Joueur: Et tout le béton des fondations, tu en fais quoi ?
+    Léa: Il est compté dedans ! C'est tout le cycle de vie, fabrication comprise.
+    Léa: Donc oui, à peu près un an.
+    => p2_e2_choix
+# Contre-attaque
+- C'est quoi ta source ? [#color=contre_attaque]
+    Joueur: Un an ? Source ?
+    Léa: L'ADEME, encore elle ! Mais franchement, c'est connu, tous les fact-checks le disent.
+    => p2_e2_choix
+# Présenter une preuve : Bilan électrique RTE
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Le bilan RTE...
+    Léa: Il parle de production, pas de fabrication. Ça ne contredit rien !
+    => p2_e2_choix
+# Ne rien faire (BONNE RÉPONSE)
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Joueur: (C'est l'ordre de grandeur donné par les études. Rien à redire.)
+    Léa: Ça, c'est un argument solide, hein ?
+    => p2_e3
+
+# --- Énigme 2.3 : affirmation vague → bonne réponse : QUESTION (contre-attaque 1)
+~ p2_e3
+Léa: Et en fin de vie, aucun problème : une éolienne, tout part au recyclage. C'est réglé !
+=> p2_e3_choix
+
+~ p2_e3_choix
+Joueur: Tout part au recyclage... Vraiment tout ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque (BONNE RÉPONSE)
+- Même les pales ? [#color=contre_attaque]
+    Joueur: Tout ? Même les pales en fibre de verre ?
+    Léa: Euh... Les pales aussi, oui. Enfin je crois.
+    Léa: Il y a une loi qui oblige à tout recycler, je l'ai lue quelque part.
+    => p2_e4
+# Contre-attaque
+- Elles sont enterrées ! [#color=contre_attaque]
+    Joueur: N'importe quoi, elles finissent toutes enterrées dans des champs !
+    Léa: Toutes ? Tu exagères autant que moi, là !
+    Léa: Bref, en fin de vie, tout est recyclé.
+    => p2_e3_choix
+# Présenter une preuve : Arrêté de juin 2020
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Regarde cet arrêté !
+    Léa: Un arrêté ? Sur quoi ? Tu peux préciser ce que tu veux me montrer ?
+    Joueur: (Elle n'a rien dit de précis pour l'instant. Ma preuve tombe à plat.)
+    Léa: Je disais : tout part au recyclage.
+    => p2_e3_choix
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Voilà, c'est 100 % propre, du début à la fin !
+    Joueur: (« Tout », c'est vague. Je devrais la faire préciser.)
+    => p2_e3_choix
+
+# --- Énigme 2.4 : précise et fausse → bonne réponse : PREUVE
+~ p2_e4
+Léa: Oui, voilà, une loi oblige à recycler 100 % d'une éolienne. Pales comprises !
+=> p2_e4_choix
+
+~ p2_e4_choix
+Joueur: 100 %, pales comprises, d'après la loi...
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Quelle loi ? [#color=contre_attaque]
+    Joueur: Quelle loi exactement ?
+    Léa: Je sais plus le nom ! Mais elle existe, je te le promets.
+    Joueur: (Je l'ai, ce texte. Pas besoin de tourner autour.)
+    => p2_e4_choix
+# Contre-attaque
+- Les lois, personne les applique [#color=contre_attaque]
+    Joueur: Une loi, de toute façon, personne ne la respecte.
+    Léa: Ça, c'est un peu facile, non ? Tu n'as rien pour le prouver.
+    Léa: La loi dit 100 %, pales comprises.
+    => p2_e4_choix
+# Présenter une preuve : Arrêté de juin 2020 (BONNE RÉPONSE)
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: La règle, c'est un arrêté de 2020. Il oblige à recycler ou réutiliser au moins 90 % de la masse d'une éolienne démantelée.
+    Joueur: Mais pour les pales, l'objectif est bien plus bas, parce qu'elles sont très difficiles à recycler. Donc pas 100 %.
+    Léa: Ah... 90 %, et moins pour les pales. Bon, c'est beaucoup, mais ce n'est pas « tout ».
+    Léa: Merci, je note. Je ne dirai plus « 100 % », promis !
+    => fin_phase2
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Donc l'éolien, c'est zéro déchet. Parfait !
+    Joueur: (J'ai le texte de l'arrêté. Il ne dit pas ça.)
+    => p2_e4_choix
+
+~ fin_phase2
+Joueur: Pour résumer : l'éolien, c'est environ 10 % de notre électricité, ça rembourse vite sa fabrication, et le recyclage progresse, mais les pales restent un problème.
+Léa: C'est honnête comme résumé. Je prends !
+=> phase3
+
+# =====================================================================
+# PHASE 3 — LA PARTICIPATION DE TOUS
+# =====================================================================
+
+~ phase3
+Joueur: Troisième partie : est-ce que c'est à chacun de nous de changer, ou plutôt à l'État et aux entreprises ?
+Léa: Aux deux ! Mais d'abord à nous, les citoyens. Moi, je fais tout bien.
+=> p3_e1
+
+# --- Énigme 3.1 : pique sans contenu factuel → bonne réponse : NE RIEN FAIRE
+~ p3_e1
+Léa: Allez, avoue, toi, je suis sûre que tu ne fais même pas le tri. Tu as une tête à rouler en SUV !
+=> p3_e1_choix
+
+~ p3_e1_choix
+Joueur: Elle me cherche, là...
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Je fais le tri, moi ! [#color=contre_attaque]
+    Joueur: Hé, je fais le tri ! Et je n'ai même pas de voiture !
+    Léa: Ohlala, je rigolais ! Tu es susceptible, toi.
+    Léa: Bon, sérieusement : il faut que tout le monde s'y mette.
+    => p3_e1_choix
+# Contre-attaque
+- Et toi, l'avion ? [#color=contre_attaque]
+    Joueur: Et toi, tu n'as jamais pris l'avion peut-être ?
+    Léa: Si, une fois, pour aller voir ma grand-mère... Mais on s'en fiche, de moi !
+    => p3_e1_choix
+# Présenter une preuve : Étude Carbone 4
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Selon l'étude de Carbone 4...
+    Léa: Elle dit si tu fais le tri, l'étude ? Non ? Alors je ne vois pas le rapport !
+    => p3_e1_choix
+# Ne rien faire (BONNE RÉPONSE)
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Joueur: (C'est une blague. Pas la peine de répondre.)
+    Léa: Bon, ok, tu ne mords pas. Bien joué !
+    => p3_e2
+
+# --- Énigme 3.2 : chiffre sans source → bonne réponse : QUESTION (contre-attaque 2)
+~ p3_e2
+Léa: Ce que je veux dire, c'est que si chacun fait ses petits gestes, on règle 80 % du problème !
+=> p3_e2_choix
+
+~ p3_e2_choix
+Joueur: 80 %... D'où vient ce chiffre ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Les petits gestes, ça sert à rien [#color=contre_attaque]
+    Joueur: Les petits gestes, ça ne sert à rien face aux grandes entreprises.
+    Léa: C'est faux, ça sert ! Et c'est démoralisant de dire ça aux gens.
+    Léa: Je maintiens : 80 % avec les gestes de chacun.
+    => p3_e2_choix
+# Contre-attaque (BONNE RÉPONSE)
+- 80 %, selon qui ? [#color=contre_attaque]
+    Joueur: 80 %, c'est énorme. Ça vient d'où ?
+    Léa: D'une étude... de Carbone 4, il me semble ! Un cabinet sur le climat.
+    => p3_e3
+# Présenter une preuve : Empreinte carbone moyenne
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: L'empreinte carbone moyenne d'un Français, c'est...
+    Léa: Et ? Ça ne dit pas quelle part on peut réduire avec ses gestes, ça.
+    => p3_e2_choix
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Vous voyez, 80 % ! Donc éteignez vos lumières, ça suffit presque.
+    Joueur: (Ce chiffre sort de nulle part. Je dois lui demander d'où il vient.)
+    => p3_e2_choix
+
+# --- Énigme 3.3 : source citée de travers → bonne réponse : PREUVE
+~ p3_e3
+Léa: Oui, Carbone 4. Ils disent que les gestes individuels, c'est l'essentiel de l'effort. 80 %, voilà.
+=> p3_e3_choix
+
+~ p3_e3_choix
+Joueur: Carbone 4 dit vraiment ça ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- Carbone 4, c'est sérieux ? [#color=contre_attaque]
+    Joueur: Carbone 4, c'est même pas sérieux comme source.
+    Léa: Si, c'est un cabinet reconnu ! Tu dis ça parce que ça t'arrange.
+    => p3_e3_choix
+# Contre-attaque
+- Tu l'as lue, l'étude ? [#color=contre_attaque]
+    Joueur: Tu l'as lue en entier, cette étude ?
+    Léa: Euh... J'ai lu un article dessus. C'est pareil, non ?
+    Joueur: (Pas vraiment. Mais moi, j'ai l'étude dans mon dossier.)
+    => p3_e3_choix
+# Présenter une preuve : Étude Carbone 4 (BONNE RÉPONSE)
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: L'étude s'appelle « Faire sa part ? », elle date de 2019.
+    Joueur: Elle dit que les gestes individuels réalistes font baisser notre empreinte d'environ 25 %. Et jusqu'à 45 % avec un effort vraiment héroïque.
+    Joueur: Le reste dépend de l'État et des entreprises : les transports, l'énergie, l'industrie.
+    Léa: Oh... Donc c'est l'inverse de ce que je disais. Les gestes, c'est un quart, pas 80 %.
+    Léa: Mais un quart, c'est déjà énorme ! Faut quand même les faire, hein. Bon, je me suis plantée, désolée.
+    => p3_e4
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Carbone 4 l'a dit, donc c'est validé !
+    Joueur: (J'ai cette étude. Elle ne dit pas ça.)
+    => p3_e3_choix
+
+# --- Énigme 3.4 : affirmation vraie → bonne réponse : NE RIEN FAIRE
+~ p3_e4
+Léa: En tout cas, un Français émet en moyenne autour de 9 tonnes de CO2 par an. Et pour tenir les objectifs climat, il faudrait descendre vers 2 tonnes.
+=> p3_e4_choix
+
+~ p3_e4_choix
+Joueur: 9 tonnes aujourd'hui, 2 tonnes à viser...
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- 2 tonnes, c'est impossible [#color=contre_attaque]
+    Joueur: 2 tonnes ? C'est impossible, autant abandonner tout de suite.
+    Léa: Bah non ! C'est difficile, mais c'est l'objectif officiel. Abandonner, c'est pas une option.
+    => p3_e4_choix
+# Contre-attaque
+- C'est en quelle année ? [#color=contre_attaque]
+    Joueur: Ces 9 tonnes, c'est quelle année, quelle méthode, quel organisme ?
+    Léa: C'est le chiffre officiel du ministère ! Tu vas pas chipoter sur une demi-tonne ?
+    => p3_e4_choix
+# Présenter une preuve : Empreinte carbone moyenne
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Ma fiche sur l'empreinte carbone dit...
+    Léa: ...à peu près 9 tonnes ? Bah c'est ce que je viens de dire !
+    => p3_e4_choix
+# Ne rien faire (BONNE RÉPONSE)
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Joueur: (C'est exact. Elle a même la bonne source.)
+    Léa: Voilà, on est d'accord ! Ça fait du bien.
+    => fin_phase3
+
+~ fin_phase3
+Joueur: Donc : les gestes de chacun comptent, autour d'un quart de l'effort. Le reste, c'est collectif.
+Léa: Tout le monde doit s'y mettre, mais pas que les citoyens. Ok, je valide !
+=> phase4
+
+# =====================================================================
+# PHASE 4 — LES TRANSPORTS
+# =====================================================================
+
+~ phase4
+Joueur: Dernière partie : les transports. Comment on se déplace demain ?
+Léa: En train ! Et à vélo ! J'ai plein d'idées là-dessus.
+=> p4_e1
+
+# --- Énigme 4.1 : affirmation vraie → bonne réponse : NE RIEN FAIRE
+~ p4_e1
+Léa: Déjà, il faut savoir que les transports, c'est le premier secteur émetteur de gaz à effet de serre en France.
+=> p4_e1_choix
+
+~ p4_e1_choix
+Joueur: Le premier secteur émetteur...
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- C'est l'industrie ! [#color=contre_attaque]
+    Joueur: Non, c'est l'industrie qui pollue le plus !
+    Léa: Euh, non, je suis sûre de moi sur ce coup-là. Les transports, c'est environ un tiers des émissions.
+    => p4_e1_choix
+# Contre-attaque
+- Et les avions des riches ? [#color=contre_attaque]
+    Joueur: Et les jets privés des milliardaires, on en parle ?
+    Léa: Si tu veux, mais ça ne change pas ce que je viens de dire !
+    => p4_e1_choix
+# Présenter une preuve : Bilan électrique RTE
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: D'après le bilan RTE...
+    Léa: C'est sur l'électricité, ça. Pas sur les transports !
+    => p4_e1_choix
+# Ne rien faire (BONNE RÉPONSE)
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Joueur: (C'est vrai. Rien à contester.)
+    Léa: Donc c'est là qu'il faut agir en priorité !
+    => p4_e2
+
+# --- Énigme 4.2 : exagération vague → bonne réponse : QUESTION (contre-attaque 1)
+~ p4_e2
+Léa: Et la solution, c'est le train. Parce que le train, ça ne pollue pas. Zéro. Nada !
+=> p4_e2_choix
+
+~ p4_e2_choix
+Joueur: Zéro pollution... Vraiment ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque (BONNE RÉPONSE)
+- Zéro, tous les trains ? [#color=contre_attaque]
+    Joueur: Zéro ? Même les TER au diesel ? Et la construction des voies ?
+    Léa: Ah... Bon, oui, les trains diesel, ça pollue. Et construire des voies aussi.
+    Léa: Disons que le train électrique pollue beaucoup, beaucoup moins que la voiture. Mais pas zéro. Pardon !
+    => p4_e3
+# Contre-attaque
+- Le train, c'est trop cher ! [#color=contre_attaque]
+    Joueur: Ouais, mais le train, c'est hors de prix !
+    Léa: Ça, c'est vrai que c'est cher... Mais on parlait de pollution, là.
+    Léa: Donc je disais : le train, zéro pollution.
+    => p4_e2_choix
+# Présenter une preuve : Programme de Léa
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Ton programme dit...
+    Léa: Mon programme ne parle pas de la pollution des trains. Tu cherches quoi ?
+    => p4_e2_choix
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Le train, c'est 100 % propre ! Prenez tous le train !
+    Joueur: (« Zéro », c'est exagéré. Je devrais la faire nuancer.)
+    => p4_e2_choix
+
+# --- Énigme 4.3 : erreur sur son propre programme → bonne réponse : PREUVE
+~ p4_e3
+Léa: Et avec mon programme, on ouvre 50 nouvelles lignes de train de nuit d'ici 2027 !
+=> p4_e3_choix
+
+~ p4_e3_choix
+Joueur: 50 lignes d'ici 2027... C'est ce qui est écrit ?
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- 2027, c'est demain ! [#color=contre_attaque]
+    Joueur: 2027, c'est dans pas longtemps, tu ne pourras jamais !
+    Léa: Si on s'y met tout de suite, pourquoi pas ? Faut être optimiste !
+    => p4_e3_choix
+# Contre-attaque
+- Personne prend le train de nuit [#color=contre_attaque]
+    Joueur: De toute façon, personne ne prend le train de nuit.
+    Léa: Bah si ! Il y a plein de gens qui adorent ça. Tu as des chiffres ?
+    => p4_e3_choix
+# Présenter une preuve : Programme de Léa (BONNE RÉPONSE)
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: Je reprends ton programme, page transports. C'est écrit 10 lignes de nuit, et d'ici 2030. Pas 50 en 2027.
+    Léa: Oh là là... Oui. 10 lignes, 2030. J'ai encore mélangé, c'est la soirée des chiffres, là !
+    Léa: Merci. Faut vraiment que je relise mon programme avant les lives, moi.
+    => p4_e4
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: 50 lignes ! C'est ça, mon ambition !
+    Joueur: (Son programme est dans mon dossier. Je devrais le ressortir.)
+    => p4_e3_choix
+
+# --- Énigme 4.4 : généralisation finale → bonne réponse : QUESTION (contre-attaque 2)
+~ p4_e4
+Léa: Bref, avec l'écologie, tout le monde sera gagnant. Personne ne perdra rien !
+=> p4_e4_choix
+
+~ p4_e4_choix
+Joueur: Personne ne perdra rien...
+Joueur: Il me reste peu de temps pour réagir !
+# Contre-attaque
+- L'écologie, c'est punitif ! [#color=contre_attaque]
+    Joueur: Mais non, l'écologie, c'est que des interdictions et des taxes !
+    Léa: Hé, c'est aussi caricatural que ce que je viens de dire, ça !
+    Léa: Je disais : tout le monde sera gagnant.
+    => p4_e4_choix
+# Contre-attaque (BONNE RÉPONSE)
+- Et ceux sans train ? [#color=contre_attaque]
+    Joueur: Personne ? Et ceux qui vivent loin d'une gare, qui n'ont pas d'autre choix que la voiture ?
+    Léa: ...Ah. Oui. Les gens à la campagne, à 40 km du premier train...
+    Léa: Ok. Pour eux, il faut des solutions avant de leur demander quoi que ce soit. Sinon, ils perdent, c'est vrai.
+    => conclusion
+# Présenter une preuve : Étude Carbone 4
+- Présenter une preuve [#color=montrer_preuve]
+    Joueur: L'étude de Carbone 4 dit...
+    Léa: Qu'il y a des perdants ? Je ne crois pas qu'elle parle de ça.
+    => p4_e4_choix
+# Ne rien faire
+- Ne rien faire... [#color=rien_faire]
+    Joueur: ...
+    Léa: Voilà ! Que du positif !
+    Joueur: (« Personne », c'est trop général. Il faut penser à ceux qui n'ont pas le choix.)
+    => p4_e4_choix
+
+# =====================================================================
+# CONCLUSION
+# =====================================================================
+
+~ conclusion
+Joueur: On arrive à la fin. Léa, un dernier mot ?
+Léa: Merci pour ce débat ! J'ai fait des erreurs, mais j'ai appris plein de trucs.
+Léa: Et je reste convaincue : l'écologie, c'est l'avenir. Juste... avec les bons chiffres !
+Joueur: Merci Léa. Ce soir, on a débattu avec des faits, et c'était ça le but.
+Joueur: À bientôt pour un nouveau débat !
+=> END

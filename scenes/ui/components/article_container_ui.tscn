@@ -7,8 +7,8 @@
 default_font = ExtResource("1_2crn3")
 Label/fonts/font = ExtResource("1_2crn3")
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sdpoi"]
-size = Vector2(128, 64)
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_i1scn"]
+size = Vector2(124, 64)
 
 [sub_resource type="LabelSettings" id="LabelSettings_2crn3"]
 font_size = 18
@@ -28,7 +28,8 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(128, 64)
 custom_maximum_size = Vector2(128, 64)
 layout_mode = 2
-texture = SubResource("PlaceholderTexture2D_sdpoi")
+texture = SubResource("PlaceholderTexture2D_i1scn")
+stretch_mode = 5
 
 [node name="MediaNameLabel" type="Label" parent="HBoxContainer" unique_id=386203237]
 unique_name_in_owner = true
