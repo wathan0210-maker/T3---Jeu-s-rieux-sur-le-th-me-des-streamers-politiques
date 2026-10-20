@@ -81,7 +81,7 @@ func start(with_dialogue_resource: DialogueResource = null, cue: String = "", ex
 ## Apply any changes to the balloon given a new [DialogueLine].
 func apply_dialogue_line() -> void:
 	is_waiting_for_input = false
-	pass_text_label.text = ""
+	pass_text_label.text = "   "
 	responses_menu.hide()
 	show()
 	

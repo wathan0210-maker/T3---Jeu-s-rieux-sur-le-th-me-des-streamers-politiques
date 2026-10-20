@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://pvppr4u8aohn"
+path="res://.godot/imported/debat_lea_fontaine.dialogue-2159ecc875af3b541c4d03d88a508b29.tres"
+
+[deps]
+
+source_file="res://dialogues/debat_lea_fontaine.dialogue"
+dest_files=["res://.godot/imported/debat_lea_fontaine.dialogue-2159ecc875af3b541c4d03d88a508b29.tres"]
+
+[params]
+
+defaults=true

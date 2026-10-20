@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Media" format=3 uid="uid://ddrfosxxcf6kk"]
+
+[ext_resource type="Script" uid="uid://dr1sllbck3i0h" path="res://scripts/classes/Research/Media.gd" id="1_47e51"]
+[ext_resource type="Texture2D" uid="uid://dcjymb3414y54" path="res://assets/icons/CNULS_logo.png" id="1_i4iis"]
+[ext_resource type="FontFile" uid="uid://ci5xe0ac5gp6q" path="res://assets/fonts/articles_2/NotoSerif-VariableFont_wdth,wght.ttf" id="2_125s0"]
+
+[resource]
+script = ExtResource("1_47e51")
+media_name = "CNULS"
+icon = ExtResource("1_i4iis")
+color = Color(0.8156863, 0, 0, 1)
+specific_font = ExtResource("2_125s0")
+metadata/_custom_type_script = "uid://dr1sllbck3i0h"

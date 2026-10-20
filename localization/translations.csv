@@ -25,3 +25,5 @@ SETTINGS_BACK,Retour,Back
 SETTINGS_SAVE_ERROR,Erreur lors de la sauvegarde des paramètres!,Error while saving the settings!
 DIALOG_HINT_BAR,[G] Options [R] Historique [O] Autoplay,[G] Settings [R] History [O] Autoplay
 LOADING,Chargement,Loading
+INVESTIGATION_SEARCH,Rechercher…,Search…
+INVESTIGATION_RECOMMENDATIONS,Recommandations:,Recommendations:

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dt6cnth0hibtc"]
+
+[ext_resource type="Script" uid="uid://cpdsepcmpi7mx" path="res://scenes/ui/components/article_content_container_ui.gd" id="1_6kbf7"]
+
+[sub_resource type="Theme" id="Theme_6kbf7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sdpoi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_duko6"]
+font_size = 52
+font_color = Color(0, 0, 0, 1)
+
+[node name="ArticleContainerUI" type="ScrollContainer" unique_id=820797683]
+theme = SubResource("Theme_6kbf7")
+script = ExtResource("1_6kbf7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=366173056]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LogoTextureRect" type="TextureRect" parent="VBoxContainer" unique_id=673244836]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 120)
+custom_maximum_size = Vector2(500, 120)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = SubResource("PlaceholderTexture2D_sdpoi")
+expand_mode = 2
+
+[node name="BarColorRect" type="ColorRect" parent="VBoxContainer" unique_id=521820505]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 50)
+custom_maximum_size = Vector2(-1, 50)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer" unique_id=1125368399]
+unique_name_in_owner = true
+layout_mode = 2
+text = "TITRE"
+label_settings = SubResource("LabelSettings_duko6")
+horizontal_alignment = 1
+
+[node name="ContentRichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=869400152]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+text = "WAYOUB WAYOUB"
+fit_content = true
+scroll_active = false

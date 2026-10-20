@@ -3,6 +3,7 @@ extends Node
 
 var main: Main
 var is_scene_loader_busy := false
+var current_investigation: Investigation = preload("uid://bxomfamcta3xh")
 
 func load_scene(new_scene: PackedScene) -> void:
 	if !main:
