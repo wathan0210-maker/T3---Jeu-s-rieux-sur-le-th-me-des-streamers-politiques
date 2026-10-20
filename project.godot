@@ -65,7 +65,7 @@ game_skip_text={
 [internationalization]
 
 locale/translations=PackedStringArray("res://localization/translations.fr.translation", "res://localization/translations.en.translation")
-locale/translations_pot_files=PackedStringArray("res://dialogues/example.dialogue", "res://dialogues/debat_lea_fontaine.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogues/example.dialogue", "res://dialogues/debat_lea_fontaine.dialogue", "res://dialogue/example.dialogue")
 
 [physics]
 

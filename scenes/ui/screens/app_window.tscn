@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dkdaqfcpsrtb4"]
+
+[node name="AppWindow" type="PanelContainer" unique_id=2049608147]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=760475029]
+layout_mode = 2
+
+[node name="TitleBar" type="HBoxContainer" parent="VBoxContainer" unique_id=1763896445]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer/TitleBar" unique_id=209323699]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ReduceButton" type="Button" parent="VBoxContainer/TitleBar" unique_id=1079012049]
+unique_name_in_owner = true
+layout_mode = 2
+text = "_"
+
+[node name="CloseButton" type="Button" parent="VBoxContainer/TitleBar" unique_id=5545763]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "X"
+
+[node name="Content" type="Control" parent="VBoxContainer" unique_id=175245634]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
